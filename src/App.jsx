@@ -23,7 +23,19 @@ const App = () => {
     };
   }, [fetchUserInfo]);
 
-  if (isLoading) return <div className="loading">Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className="loading">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+      </div>
+  );
+  }
+  
+  
 
   return (
     <div className="container">

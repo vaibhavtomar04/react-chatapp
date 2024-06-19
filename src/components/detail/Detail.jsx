@@ -38,13 +38,8 @@ const Detail = () => {
                 <p></p>
             </div>
             <div className="info">
-                <div className="option">
-                    <div className="title">
-                        <span>Chat Settings</span>
-                        <img src="./arrowUp.png" alt="" />
-                    </div>
-                </div>
-                <div className="option">
+                
+                 <div className="option">
                     <div className="title">
                         <span>Shared photos</span>
                         <img src="./arrowDown.png" alt="" />
@@ -58,16 +53,34 @@ const Detail = () => {
                                 />
                                 <span>photo.png</span>
                             </div>
+                            
+                            <img src="./download.png" alt="" className="icon" />
+                        </div>
+                        <div className="photoItem">
+                            <div className="photoDetail">
+                                <img
+                                    src="https://images.pexels.com/photos/2026960/pexels-photo-2026960.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt=""
+                                />
+                                <span>photo.png</span>
+                            </div>
+                            
+                            <img src="./download.png" alt="" className="icon" />
+                        </div>
+                        <div className="photoItem">
+                            <div className="photoDetail">
+                                <img
+                                    src="https://images.pexels.com/photos/3648977/pexels-photo-3648977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt=""
+                                />
+                                <span>photo.png</span>
+                            </div>
+                            
                             <img src="./download.png" alt="" className="icon" />
                         </div>
                     </div>
-                </div>
-                <div className="option">
-                    <div className="title">
-                        <span>Shared Files</span>
-                        <img src="./arrowDown.png" alt="" />
-                    </div>
-                </div>
+                </div> 
+                
                 <button onClick={handleBlock}>
                     {isCurrentUserBlocked
                         ? "You are Blocked!"
